@@ -17,7 +17,7 @@ const Products = () => {
   const [showModal, setModalShow] = useState(false);
   const [confirmOptions, setConfirmOptions] = useState({});
   const defaultImgUrl =
-    "https://restfulapi.dnd-group.net/public/photo-icon.png"; //
+    "https://restfulapi.dnd-group.net/public/photo-icon.png";
   const fileRef = useRef();
   const [previewImage, setPreviewImage] = useState();
 
@@ -39,13 +39,6 @@ const Products = () => {
     }),
     onSubmit: (values) => {
       const { id, ...others } = values;
-
-      // console.log({
-      //   fileName: values.image.name,
-      //   type: values.image.type,
-      //   //size: `${values.file.size} bytes`,
-      // });
-      //console.log(values);
 
       const newValue = {
         ...others,
@@ -100,7 +93,6 @@ const Products = () => {
 
           if (res.image) {
             setPreviewImage(res.image);
-            console.log(res.image);
           } else {
             setPreviewImage(defaultImgUrl);
           }
@@ -299,7 +291,6 @@ const Products = () => {
                 ref={ fileRef }
                 accept="image/*"
                 onChange={ (e) => {
-                  console.log(e.target.files[0]);
                   if (e.target.files && e.target.files[0]) {
                     formik.setFieldValue("image", e.target.files[0]);
                     setPreviewImage(URL.createObjectURL(e.target.files[0]));

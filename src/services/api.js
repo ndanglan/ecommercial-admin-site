@@ -24,7 +24,7 @@ instance.interceptors.request.use(request => {
   store.dispatch({
     type: ActionTypes.SHOW_LOADING
   })
-  // console.log(state.auth.token);
+
   if (state.auth.token) {
     request.headers.Authorization = `Bearer ${state.auth.token}`;
   }
