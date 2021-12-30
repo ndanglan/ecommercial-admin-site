@@ -1,0 +1,6 @@
+export { default as Admin } from './Admin/Admin'
+export { default as Carts } from './Carts/Carts'
+export { default as Home } from './Home/Home'
+export { default as Login } from './Login/Login'
+export { default as Products } from './Products/Products'
+export { default as Users } from './Users/Users'
