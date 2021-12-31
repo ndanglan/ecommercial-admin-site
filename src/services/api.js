@@ -3,7 +3,7 @@ import ActionTypes from "../stores/actions";
 import store from './../stores';
 
 const url = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'https://silkshop.herokuapp.com',
   users: '/users',
   products: '/products',
   carts: '/carts',
