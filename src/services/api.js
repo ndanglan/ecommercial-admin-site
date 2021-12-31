@@ -41,15 +41,15 @@ instance.interceptors.response.use(response => {
     type: ActionTypes.HIDE_LOADING
   })
   if (!error.response) {
-    window.location.href = "/no-internet";
+    // window.location.href = "/no-internet";
   } else {
     switch (error.response.status) {
-      case 401:
-        window.location.href = '/login';
-        break;
-      case 403:
-        window.location.href = "/no-permission";
-        break;
+      // case 401:
+      //   window.location.href = '/login';
+      //   break;
+      // case 403:
+      //   window.location.href = "/no-permission";
+      //   break;
       default:
         break;
     }
