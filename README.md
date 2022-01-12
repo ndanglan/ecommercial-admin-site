@@ -1,7 +1,7 @@
 # Bắt đầu với NPM INSTALL
 
 Tài khoản quản trị:
-- Tên đăng nhập : adminPresent
+- Tên đăng nhập : adminPresent2
 - Mật khẩu 12345678
 
 # Các chức năng chính:
